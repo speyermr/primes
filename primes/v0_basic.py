@@ -1,3 +1,9 @@
+# Basic prime number testing... slow!
+#
+# The algorithm is simple, but has the advantage that we are sure it must be
+# correct, as it is essentially implementing the mathematical definition of a
+# prime number.
+#
 def is_prime(n):
     # First of all, assume the number "n" is prime.
     flag = True

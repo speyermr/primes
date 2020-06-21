@@ -1,3 +1,5 @@
+# Faster: using previously found primes as we go through the loop.
+
 def upto(limit):
     primes_so_far = []
 

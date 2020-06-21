@@ -1,9 +1,11 @@
-def upto(limit):
-    # The Sieve of Eratosthenes
-    #
-    # https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
-    # 
+# Fastest: The Sieve of Eratosthenes
+#
+# https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+#
+# Invented around 2200 years ago!
+# 
 
+def upto(limit):
     # Fill our sieve with "True", meaning a number at index=N will be prime if
     # sieve[n] == True.
     sieve = [True] * limit

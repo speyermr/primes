@@ -1,3 +1,5 @@
+# Faster: using modular arithmetic for the primeness test
+
 def is_prime(n):
     for d in range(2, n):
         # FIXME

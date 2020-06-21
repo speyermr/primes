@@ -1,3 +1,6 @@
+# Faster: stopping if our divisor > sqrt(n), or said another way, if divisor
+# squared is > n.
+
 def upto(limit):
     primes_so_far = []
 

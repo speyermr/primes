@@ -1,3 +1,5 @@
+# Faster: using `return` flavour!
+
 def is_prime(n):
     for a in range(1, n):
         for b in range(1, n):
