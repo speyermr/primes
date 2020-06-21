@@ -7,7 +7,7 @@ import primes.v2_mod
 import primes.v3_inner
 import primes.v4_squarestop
 import primes.v5_sieve
-    
+
 
 # A list of all the modules we've made
 modules = (
@@ -38,15 +38,18 @@ def test_speed():
             if limit < 100:
                 expected = list(primes.v0_basic.upto(limit))
 
-            
             t0 = time.time_ns() # Note the time in nanoseconds (ns) before
             actual = list(module.upto(limit)) # Run the code to generate primes
             t1 = time.time_ns() # Note the time afterwards
 
-            if expected and actual != expected:
-                print(f'WARNING: expected {expected} but got {actual} instead')
-            duration = (t1 - t0) // 1000
+            # Calculate the run-time for this module's upto() function by
+            # subtracting t0 from t1.
+            duration = (t1 - t0) // 1000  # Get the answer in us (microseconds)
 
+            if expected and (actual != expected):
+                print(f'WARNING: expected {expected} but got {actual} instead')
+
+            # Print out the run-time
             name = module.__name__
             print(f'  {duration:9d}us  {name:20s}')
 
