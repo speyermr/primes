@@ -9,7 +9,7 @@ import primes.v4_squarestop
 import primes.v5_sieve
 
 # Test that the code works
-def correctness_test():
+def test_correctness():
     print( list( primes.v0_basic.upto(10) ))
     print( list( primes.v1_shortcircuit.upto(10)))
     print( list( primes.v2_mod.upto(10)))
@@ -42,4 +42,5 @@ def test_speed():
             print(f'  {duration:9d}us  {name:20s}')
 
 # Main
-correctness_test()
+test_correctness()
+#test_speed()
